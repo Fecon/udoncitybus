@@ -1,0 +1,52 @@
+.bg-custom1{
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+}
+.bg-custom1::before {
+background-image: url(../images/banching-bg.jpg);
+background-size: cover;
+content: "";
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -2;
+opacity: 0.1;
+}
+
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  margin: 30px;
+  z-index: 1000;
+}
+.video-thumbnail::before {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    content: "\f01d";
+    font-family: FontAwesome;
+    font-size: 100px;
+    color: #fff;
+    opacity: .8;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+  }
+.video-thumbnail:hover:before {
+    color: #eee;
+  }
+}
+
+.local-scroll{
+  line-height: 100px !important;
+}
+.home-text{
+  color: #FFF;
+}
